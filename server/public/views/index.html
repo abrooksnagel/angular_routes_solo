@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="presidentApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Presidential Candidate Information</title>
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/scripts/stylesheet.css" rel="stylesheet">
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="vendors/angular-route/angular-route.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+    <base href="/">
+
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <header>
+            <h1>Click to read about a presidential candidate!</h1>
+        </header>
+    </div>
+
+    <div id="content">
+        <div class="buttons">
+        <a href="/sanders"><button class="btn btn-success btn-lg">Bernie Sanders</button></a>
+        <a href="/clinton"><button class="btn btn-warning btn-lg">Hillary Clinton</button></a>
+        <a href="/trump"><button class="btn btn-danger btn-lg">Donald Trump</button></a>
+        </div>
+
+        <div ng-view>
+        </div>
+
+    </div>
+    <div id="footer">
+        <footer>
+            <h1>Remember to vote November 8, 2016!</h1>
+        </footer>
+    </div>
+    </div>
+
+</body>
+</html>
